@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>分类待办事项</title>
-    <link rel="stylesheet" href="style.css"> <!-- 补充 CSS 引入 -->
-</head>
-<body>
-    <div class="container"> <!-- 新增主容器 -->
-        <h1>📋 分类待办事项</h1>
 
-        <!-- 任务添加区 -->
         <div class="add-task-section">
             <input type="text" id="taskInput" placeholder="输入新的待办事项...">
             <select id="categorySelect">
@@ -23,7 +17,7 @@
             <button onclick="addTask()">添加任务</button>
         </div>
 
-        <!-- 分类标签页 -->
+
         <div class="category-tabs">
             <button class="category-tab active" onclick="filterTasks('全部', this)">全部</button>
             <button class="category-tab" onclick="filterTasks('工作', this)">工作</button>
@@ -33,15 +27,9 @@
             <button class="category-tab" onclick="filterTasks('其他', this)">其他</button>
         </div>
 
-        <!-- 任务列表（空结构） -->
-        <ul class="task-list" id="taskList"></ul>
 
-        <!-- 统计区 -->
         <div class="stats">
             <span>总计: <span id="totalTasks">0</span> 项</span>
             <span>完成: <span id="completedTasks">0</span> 项</span>
         </div>
     </div>
-    <script src="script.js"></script> <!-- 补充 JS 引入 -->
-</body>
-</html>
