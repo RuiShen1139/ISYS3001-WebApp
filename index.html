@@ -18,5 +18,22 @@
             <!-- 任务将在这里显示 -->
         </ul>
     </div>
+    <div class="add-task-section">
+        <input type="text" id="taskInput" placeholder="输入新的待办事项...">
+        <!-- 新增分类下拉框 -->
+        <select id="categorySelect">
+            <option value="工作">工作</option>
+            <option value="学习">学习</option>
+            <option value="生活">生活</option>
+        </select>
+        <button onclick="addTask()">添加任务</button>
+    </div>
+    <!-- 新增分类筛选标签 -->
+    <div class="category-tabs">
+        <button class="category-tab active" onclick="filterTasks('全部', this)">全部</button>
+        <button class="category-tab" onclick="filterTasks('工作', this)">工作</button>
+        <button class="category-tab" onclick="filterTasks('学习', this)">学习</button>
+        <button class="category-tab" onclick="filterTasks('生活', this)">生活</button>
+    </div>
 </body>
 </html>
